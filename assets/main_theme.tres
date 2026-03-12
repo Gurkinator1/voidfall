@@ -1,0 +1,10 @@
+[gd_resource type="Theme" format=3 uid="uid://7g8f8kvpp64u"]
+
+[ext_resource type="FontVariation" uid="uid://dj6hy6wyvixgu" path="res://assets/font_variation.tres" id="1_xgdp2"]
+
+[resource]
+RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+RichTextLabel/constants/shadow_offset_x = 3
+RichTextLabel/constants/shadow_offset_y = 3
+RichTextLabel/font_sizes/normal_font_size = 40
+RichTextLabel/fonts/normal_font = ExtResource("1_xgdp2")

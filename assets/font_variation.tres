@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" format=3 uid="uid://dj6hy6wyvixgu"]
+
+[ext_resource type="FontFile" uid="uid://iopnl5n1h7kj" path="res://assets/SpaceMadness.ttf" id="1_q2jix"]
+
+[resource]
+base_font = ExtResource("1_q2jix")
