@@ -1,25 +1,21 @@
 [gd_scene format=3 uid="uid://bq4qwsu5ux12s"]
 
-[ext_resource type="PackedScene" uid="uid://csuqoc2gyhsgr" path="res://scenes/player.tscn" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://guv7820kfv4y" path="res://scenes/player.tscn" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://61c67o7jg03e" path="res://scripts/follow_camera.gd" id="1_sugp2"]
 [ext_resource type="Theme" uid="uid://7g8f8kvpp64u" path="res://assets/main_theme.tres" id="2_sugp2"]
 
-[node name="Node2D" type="Node2D" unique_id=259380009]
+[node name="main" type="Node2D" unique_id=259380009]
+
+[node name="PlayerCamera" type="Camera2D" parent="." unique_id=1677785947 node_paths=PackedStringArray("target")]
+script = ExtResource("1_sugp2")
+target = NodePath("../Player")
 
 [node name="Player" parent="." unique_id=1549118654 instance=ExtResource("1_0wfyh")]
 position = Vector2(541, 305)
 
 [node name="overlay" type="CanvasLayer" parent="." unique_id=695988111]
 
-[node name="start_screen" type="Control" parent="overlay" unique_id=1633180135]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="top_text" type="RichTextLabel" parent="overlay/start_screen" unique_id=660019829]
-layout_mode = 1
+[node name="top_text" type="RichTextLabel" parent="overlay" unique_id=660019829]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
