@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b0f33ik4l1jnw" path="res://assets/little_guy.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://dv5c3brayqo5t" path="res://scripts/player_controller.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://vpo7g3rqykfg" path="res://scripts/weapon_handler.gd" id="3_qhqgy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
 radius = 18.0
@@ -79,3 +80,6 @@ shape = SubResource("CapsuleShape2D_3vyb7")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_fjrip")
 animation = &"walking"
+
+[node name="Node" type="Node" parent="." unique_id=1307580222]
+script = ExtResource("3_qhqgy")
